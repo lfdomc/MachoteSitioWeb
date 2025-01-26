@@ -41,10 +41,6 @@ const HeaderStyle = styled.header`
     }
   }
 
-  @media (max-width: 500px) {
-    position: static;  /* Dejar de estar fijo en pantallas menores a 500px */
-  }
-
   @media (max-width: 427px) {
     padding: 10px;
     flex-direction: column;
@@ -56,7 +52,6 @@ const HeaderStyle = styled.header`
     }
   }
 `;
-
 
 
 

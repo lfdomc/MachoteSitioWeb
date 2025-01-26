@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef, FormEvent } from 'react';
 import styled from 'styled-components';
+import { ToastContainer, toast } from 'react-toastify';
 
 const FormContainer = styled.form`
   display: flex;
@@ -105,6 +106,7 @@ const SubmitButton = styled.input`
 `;
 
 export const FormContact = () => {
+  const notify = () => toast("Formulario Enviado!");
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -112,22 +114,22 @@ export const FormContact = () => {
 
     if (form.current) {
       emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-          publicKey: 'YOUR_PUBLIC_KEY',
+        .sendForm('service_wb8w748', 'template_ea6wt54', form.current, {
+          publicKey: 'SkdAPtY2pwi__P33z',
         })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          }
-        );
+        .then(() => {
+          notify();
+          form.current?.reset();
+        })
+        .catch((error) => {
+          console.error('FAILED...', error.text);
+        });
     }
   };
 
   return (
     <FormContainer ref={form} onSubmit={sendEmail}>
+       <ToastContainer />
       <Section>
         <InputLabel htmlFor="user_name">Nombre:</InputLabel>
         <InputField type="text" id="user_name" name="user_name" required />
@@ -137,8 +139,12 @@ export const FormContact = () => {
         <InputField type="email" id="user_email" name="user_email" required />
       </Section>
       <Section>
+        <InputLabel htmlFor="tel">Telefono:</InputLabel>
+        <InputField type="text" id="tel" name="tel" required />
+      </Section>
+      <Section>
         <InputLabel htmlFor="message">Mensaje:</InputLabel>
-        <TextAreaField id="message" name="message" required />
+        <TextAreaField id="message" name="message" required  />
       </Section>
       <SubmitButton type="submit" value="Enviar" />
     </FormContainer>
