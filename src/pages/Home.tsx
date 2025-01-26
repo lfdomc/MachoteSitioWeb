@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <div>
-      <Banner image="/image/react.png" h1="DISEÑO DE PÁGINAS WEB CON REACT" color={colorprimary} fcolor="white"/>
+      <Banner image="/image/react.png" h1="DISEÑO DE PÁGINAS WEB" color={colorprimary} fcolor="white"/>
       <Divider1/>
       <Section>
       </Section>

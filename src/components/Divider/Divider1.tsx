@@ -33,17 +33,10 @@ const Divider1 = () => {
                     title="Servicios de Diseño Web"
                     parraf={`
                             En Temsa nos especializamos en el desarrollo de soluciones web modernas y 
-                            personalizadas utilizando React.js, una de las bibliotecas más poderosas y populares 
+                            personalizadas, Usamos las Herramientas más poderosas y populares 
                             para crear interfaces de usuario interactivas y dinámicas. Nuestro enfoque está en crear 
                             experiencias digitales excepcionales para nuestros clientes, adaptadas a sus necesidades 
                             y objetivos.
-                        
-                            
-                            ¿Por qué elegir React.js? React.js es conocido por su rendimiento excepcional, su capacidad 
-                            para crear interfaces de usuario rápidas y reactivas, y su arquitectura basada en componentes,
-                            lo que permite un desarrollo modular, reutilizable y escalable. Con React, podemos ofrecerte
-                            soluciones web que se adaptan perfectamente a tu negocio, optimizando la experiencia de usuario
-                            y garantizando un rendimiento sin igual.
                             `}
                 />
             </CardScrollContainer>
