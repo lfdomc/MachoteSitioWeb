@@ -1,0 +1,64 @@
+/* Reset CSS básico para normalizar estilos de navegador */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Quitar decoración de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Quitar decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Quitar estilos de botón por defecto */
+button, input, select, textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Hacer que las imágenes no excedan su contenedor */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Quitar estilos de tabla por defecto */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Quitar estilos por defecto de elementos de formulario */
+input, button, textarea, select {
+  appearance: none;
+}
+
+/* Definir tamaño base para elementos tipográficos */
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+
+/* Ajustar estilos de elementos bloque en línea */
+button, a {
+  cursor: pointer;
+}
