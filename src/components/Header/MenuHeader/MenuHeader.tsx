@@ -76,8 +76,8 @@ const Hamburger = styled.div`
   cursor: pointer;
 
   span {
-    width: 20px;
-    height: 3px;
+    width: 35px;
+    height: 6px;
     background-color: #11417b;
     border-radius: 5px;
   }
