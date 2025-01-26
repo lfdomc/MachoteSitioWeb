@@ -30,13 +30,13 @@ const HeaderStyle = styled.header`
   }
 
   @media (max-width: 768px) {
-    padding: 15px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     img {
-      max-width: 70%;
+      max-width: 80%;
       margin-bottom: 15px;
+      margin-left:25px;
     }
   }
 
@@ -59,23 +59,24 @@ const ContainerButtons = styled.section`
   flex-wrap: wrap;
 
   @media (max-width: 768px) {
-    gap: 15px;
+    gap: 5px;
     justify-content: center;
   }
 
   @media (max-width: 427px) {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    margin-left:50px;
   }
 `;
 
 const H3 = styled.h3`
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   color: #000205;
-  margin: 10px 0;
+  margin: 2px 0;
  
 
   @media (max-width: 1024px) {
