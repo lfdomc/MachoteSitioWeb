@@ -9,13 +9,13 @@ const Parraf = styled.p`
   font-weight: 500;
   padding-bottom: 10px;
   text-align: justify;
-  text-justify: inter-word; /* Asegura que el texto se justifique correctamente */
+  text-justify: inter-word; 
 `;
 
 // Estilo para el título
 const Title = styled.h3`
   color: #11417b;  
-  font-size: 1.7rem;  /* Usando rem para hacer la fuente más flexible */
+  font-size: 1.7rem;  
   font-weight: 700; 
   margin-bottom: 16px;
   text-align: center;
@@ -35,7 +35,7 @@ const Title = styled.h3`
   }
 `;
 
-// Estilo para el Card, añadiendo borde y algunos ajustes
+// Estilo para el Card, haciéndolo responsive después de 430px
 const StyledCard = styled(Card)`
   width: 90%;
   max-width: 650px;
@@ -63,6 +63,12 @@ const StyledCard = styled(Card)`
   @media (max-width: 480px) {
     padding: 10px;
   }
+
+  @media (max-width: 430px) {
+    min-width: 100%; 
+    max-height: none;
+    padding: 8px;
+  }
 `;
 
 // Estilo para la imagen con animación de escala
@@ -74,10 +80,15 @@ const Image = styled.img`
   display: block;
   margin: 0 auto;
   height: auto;
-  transition: transform 0.3s ease-in-out; /* Animación suave */
+  transition: transform 0.3s ease-in-out; 
 
   &:hover {
-    transform: scale(1.2); /* Aumenta el tamaño un 10% */
+    transform: scale(1.2); 
+  }
+
+  @media (max-width: 430px) {
+    max-width: 100%;
+    max-height: 150px;
   }
 `;
 
