@@ -11,6 +11,7 @@ function AppRoutes() {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/servicios" element={<Servicios/>} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/:id" element={<NotFound />} />
         </Routes>
     );
 }
