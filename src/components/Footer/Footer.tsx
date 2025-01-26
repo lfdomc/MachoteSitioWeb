@@ -10,16 +10,16 @@ const HeaderStyle = styled.header`
   display: flex;
   justify-content: center;
   
-  background-color: transparent;
+  background-color: #f0f0f0c7;
   flex-direction: column;
   align-items: center;
   
 
   img {
-    max-width: 10.528rem;
+    max-width: 6.528rem;
     max-height: 6.5rem;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.7); 
-    background-color: #f0f0f05a;
+    
+    border-radius: 30px;
   }
 
   @media (max-width: 1024px) {
