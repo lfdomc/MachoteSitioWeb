@@ -20,12 +20,12 @@ const HeaderStyle = styled.header`
   background-image: url("/image/backgroundheader.png");
   
   img {
-    max-width: 6.528rem;
-    max-height: 6.5rem;
+    max-width: 8.528rem;
+    max-height: 7.5rem;
   }
 
   @media (max-width: 1024px) {
-    padding: 20px;
+    padding: 2px;
     img {
       max-width: 8rem;
     }
@@ -36,8 +36,9 @@ const HeaderStyle = styled.header`
     align-items: center;
     justify-content: center;
     img {
-      max-width: 70%;
+      max-width: 80%;
       margin-bottom: 15px;
+      margin-left:25px;
     }
   }
 
