@@ -34,7 +34,7 @@ const Ul = styled.ul<UlProps>`
   @media (max-width: 554px) {
     display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
     position: absolute;
-    top: 160px;  /* Ajuste de la posición vertical */
+    top: 161px;  /* Ajuste de la posición vertical */
     left: 50%;
     transform: translateX(-50%);  /* Centrado horizontal */
     background-color: #11417b86;
