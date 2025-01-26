@@ -4,7 +4,7 @@ import Scroll1 from "../Scroll1/Scroll1"
 
 const MainContainer = styled.section`
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     width: 100%; /* Asegura que el contenedor principal ocupe el 100% del ancho */
     gap: 20px; /* Agrega un espacio de 20px entre los componentes */
