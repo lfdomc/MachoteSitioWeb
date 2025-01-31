@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import  'dayschedule-widget/dist/dayschedule-popup.css';
 import 'dayschedule-widget/dist/dayschedule-widget.js';
 import styled from 'styled-components';
