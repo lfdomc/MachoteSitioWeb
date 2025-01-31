@@ -1,11 +1,14 @@
 import React from 'react';
-import  'dayschedule-widget/dist/dayschedule-popup.css';
+import 'dayschedule-widget/dist/dayschedule-popup.css';
 import 'dayschedule-widget/dist/dayschedule-widget.js';
 import styled from 'styled-components';
 
+// Declarar el tipo correcto para daySchedule
+declare const daySchedule: {
+  initPopupWidget: (config: { url: string }) => void;
+};
 
-const Button =styled.button`
-  
+const Button = styled.button`
   font-size: 20px;
   font-weight: 700;
   display: flex;
@@ -25,13 +28,15 @@ const Button =styled.button`
     color: #11417b;
     transform: scale(1.05);
   }
-
-`
-
+`;
 
 export default class DayScheduleButton extends React.Component {
   handleClick = () => {
-    daySchedule.initPopupWidget({ url: 'https://temsa.dayschedule.com' });
+    if (typeof daySchedule !== 'undefined' && daySchedule.initPopupWidget) {
+      daySchedule.initPopupWidget({ url: 'https://temsa.dayschedule.com' });
+    } else {
+      console.error('daySchedule no está definido o initPopupWidget no está disponible');
+    }
   };
 
   render() {
