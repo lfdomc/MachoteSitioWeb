@@ -54,7 +54,7 @@ padding: 10px;
 
 interface Info {
   image: string;
-  h1: string;
+  h1?: string;
   color: string;
   fcolor: string;
 }
