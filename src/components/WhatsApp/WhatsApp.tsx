@@ -8,7 +8,7 @@ const FloatingButton = styled.button`
   width: 85px;
   height: 85px;
   background: transparent;
-  border-radius: 50%;
+  border-radius: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +19,11 @@ const FloatingButton = styled.button`
 
   &:hover {
     filter: drop-shadow(4px 4px 4px 8px rgba(0, 0, 0, 0.3));
+  }
+
+  @media (max-width: 420px) {
+    width: 60px;
+    height: 60px;
   }
 `;
 
