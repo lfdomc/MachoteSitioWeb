@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Calendar1 from "../../Calendar1/Calendar1";
 
 const Section = styled.section`
   display: flex;
@@ -68,6 +69,27 @@ const StyledLink = styled(Link)`
     transform: scale(1.05);
   }
 `;
+const StyledLink2 = styled(Link)`
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #11417b;
+  border-radius: 20px;
+  background-color: #11417b;
+  color: #fdfdfd;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 2px solid #11417b;
+    color: #11417b;
+    transform: scale(1.05);
+  }
+`;
 
 const Hamburger = styled.div`
   display: none;
@@ -112,9 +134,20 @@ function MenuHeader() {
           <li>
             <StyledLink to="/contact" onClick={closeMenu}>Contácto</StyledLink>
           </li>
+          <li>
+            
+          <Calendar1/>
+          </li>
+          
+          
+
+          
         </Ul>
       </Nav>
+      
     </Section>
+  
+
   );
 }
 
