@@ -9,16 +9,13 @@ const HeaderStyle = styled.header`
   padding-left: 51.15px;
   display: flex;
   justify-content: center;
-  
+  align-items: center;
   background-color: #f0f0f0c7;
   flex-direction: column;
-  align-items: center;
-  
 
   img {
     max-width: 6.528rem;
     max-height: 6.5rem;
-    
     border-radius: 30px;
   }
 
@@ -30,21 +27,15 @@ const HeaderStyle = styled.header`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     img {
       max-width: 80%;
       margin-bottom: 15px;
-      margin-left:25px;
+      margin-left: 25px;
     }
   }
 
   @media (max-width: 427px) {
     padding: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     img {
       max-width: 80%;
     }
@@ -56,18 +47,17 @@ const ContainerButtons = styled.section`
   gap: 25px;
   padding-right: 51.15px;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 
   @media (max-width: 768px) {
     gap: 5px;
-    justify-content: center;
   }
 
   @media (max-width: 427px) {
     flex-direction: column;
-    align-items: center;
     gap: 5px;
-    margin-left:50px;
+    margin-left: 50px;
   }
 `;
 
@@ -77,25 +67,23 @@ const H3 = styled.h3`
   text-align: center;
   color: #000205;
   margin: 2px 0;
- 
 
   @media (max-width: 1024px) {
-    font-size: 1rem;  
+    font-size: 1rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   @media (max-width: 427px) {
-    font-size: 1rem;  
+    font-size: 1rem;
   }
 `;
 
 const Footer = () => {
-
   const { logo } = useContext(GlobalContext);
-  
+
   return (
     <HeaderStyle>
       <Link to="/">
