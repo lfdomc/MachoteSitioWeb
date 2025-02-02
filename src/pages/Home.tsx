@@ -26,7 +26,7 @@ const Home = () => {
       <Banner image="/image/react.png" h1="DISEÑO DE PÁGINAS WEB" color={colorprimary} fcolor="white"/>
      
     
-      <Banner2 image="/image/promo.jpg" h1="APROVECHE NUESTRA OFERTA" color="trasparent" fcolor={colorprimary}/>
+      <Banner2 image="/image/promo2.png" h1="APROVECHE NUESTRA OFERTA" color="trasparent" fcolor={colorprimary}/>
       <Divider1/>
       <Section>
       </Section>
