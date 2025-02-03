@@ -8,7 +8,7 @@ import { FormContact } from "../components/FormContact/FormContact"
 const Contact = () => {
   return (
     <div>
-      <Banner image="/image/contacto.png" h1 ="FORMULARIO PARA SUS CONSULTAS" color="#11417b" fcolor="#f3f3f3"/>
+      <Banner image="/image/contacto2.png" h1 ="FORMULARIO PARA SUS CONSULTAS" color="#11417b" fcolor="#f3f3f3"/>
       <FormContact/>
       
 
