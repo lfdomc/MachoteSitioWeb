@@ -112,6 +112,9 @@ function MenuHeader() {
             <StyledLink to="/servicios" onClick={closeMenu}>Servicios</StyledLink>
           </li>
           <li>
+            <StyledLink to="/portafolio" onClick={closeMenu}>Portafolio</StyledLink>
+          </li>
+          <li>
             <StyledLink to="/contact" onClick={closeMenu}>Contácto</StyledLink>
           </li>
           <li>

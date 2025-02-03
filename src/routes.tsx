@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound"; 
 import Contact from "./pages/Contact";
 import Servicios from "./pages/Servicios";
+import Portafolio from './pages/Portafolio';
 
 
 
@@ -13,6 +14,7 @@ function AppRoutes() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact/>} />
             <Route path="/servicios" element={<Servicios/>} />
+            <Route path="/portafolio" element={<Portafolio/>} />
             <Route path="*" element={<NotFound />} />
             <Route path="/:id" element={<NotFound />} />
         </Routes>
