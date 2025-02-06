@@ -91,7 +91,7 @@ const Footer = () => {
       </Link>
 
       <ContainerButtons>
-        <H3>Telefono: +506 7012-0250</H3>
+        <H3>Tel: +506 7012-0250</H3>
         <H3>Email: info@crtemsa.com</H3>
       </ContainerButtons>
     </HeaderStyle>

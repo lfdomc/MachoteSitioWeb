@@ -31,7 +31,7 @@ const { colorprimary } = useContext(GlobalContext);
         btColor={colorprimary}
         fbtColor="white"
         hbtColor="#b79304"
-        btonClick={() => window.open("https://restaurante-machote-iwcb.vercel.app/", "_blank")}
+        btonClick={() => window.open("https://restaurante-machote.vercel.app/", "_blank")}
 
         //btimage="/image/ktrina/calabera.png"
 
